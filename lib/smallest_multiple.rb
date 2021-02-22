@@ -18,7 +18,7 @@ def smallest_multiple(input)
   # You can apply this to an entire array by applying it to each result as you go through it. 
   # This is what reduce does.
   # LCM Returns the least common multiple (always positive). 0.lcm(x) and x.lcm(0) return zero.
-  (1..input).to_a.reduce{:lcm}
+  (1..input).to_a.reduce(:lcm)
 end
 
 print smallest_multiple(10)
